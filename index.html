@@ -29,16 +29,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-        .slide {
-            background: #369;
-        }
-    </style>
 </head>
 <body class="noscroll">
-    <div id="topbar"></div>
-   <ul class="navigation">
+    <div id="topbar">HEADER</div>
+    <ul class="navigation">
         <li data-slide="0"><a>Intro</a></li>
         <li data-slide="1"><a>1930</a></li>
         <li data-slide="2"><a>1940</a></li>
@@ -51,9 +45,8 @@
         <li data-slide="9"><a>2010</a></li>
         <li data-slide="10"><a>2020</a></li>
         <li data-slide="11"><a>2020</a></li>
-        <li data-slide="12"><a>2020</a></li>
-   </ul>
-   <div id="mute"><div></div></div>
+    </ul>
+    <div id="mute"><div></div></div>
 
     <div class="mainSection">
         <div class="slide" id="slide0" data-slide="0">
@@ -84,7 +77,7 @@
         </div>
         
         <section class="slide" id="slide1" data-slide="1">
-            <div class="year">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptatum perspiciatis eligendi dolorem debitis nobis dolor ratione, cumque rem ut labore eveniet neque aperiam dolorum temporibus, nemo suscipit porro consectetur.</div>
+            <div class="year">Нажимая на кнопки навигации в левой части страницы вы можете перемещаться вперед и назад перепрыгивая через один или несколько экранов.</div>
             <audio id="1930s" >
                 <source src="audio/1930.ogg" type="audio/ogg">
                 <source src="http://www.porschevolution.com/sounds/1930.mp3" type="audio/mpeg">
@@ -93,7 +86,7 @@
         </section>
         
         <section class="slide" id="slide2" data-slide="2">
-            <div class="year">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos est odio quisquam, iure iusto placeat. Architecto, alias nam, a sed aut fuga aspernatur accusamus eius consequuntur error porro ratione commodi!</div>
+            <div class="year">Нажимая на кнопку-якорь внизу страницы вы можете переместиться к следующему экрану. При этом текущая мелодия поставится на паузу и начнется воспроизведение трека из следующего экрана.</div>
             <audio id="1940s" >
                 <source src="audio/1940.ogg" type="audio/ogg">
                 <source src="" type="audio/mpeg">
@@ -102,7 +95,7 @@
         </section>
         
         <section class="slide" id="slide3" data-slide="3">
-            <div class="year">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus magnam reiciendis aliquam, debitis ipsam cum sequi delectus odio quas est ex impedit praesentium quos molestiae fugiat, at deleniti doloribus. Dolorem.</div>
+            <div class="year">Когда при скролле экран становится текущим(current) текст в текущем экране плавно становится видимым, а кнопка-якорь в предыдущем экране плавно скрывается.</div>
             <audio id="1950s" >
                 <source src="audio/1950.ogg" type="audio/ogg">
                 <source src="" type="audio/mpeg">
@@ -111,7 +104,7 @@
         </section>
         
         <section class="slide" id="slide4" data-slide="4">
-            <div class="year">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus debitis itaque, accusamus quibusdam soluta reiciendis qui tempora at, perspiciatis consequatur harum corporis blanditiis. Id qui dolores ullam, eligendi, eos praesentium!</div>
+            <div class="year">Если при скролле текущим становится первый и последний экран, меню(header) сверху и меню-навигация по экранам скрывается и музыка ставится на паузу.</div>
             <audio id="1960s" >
                 <source src="audio/1960.ogg" type="audio/ogg">
                 <source src="" type="audio/mpeg">
@@ -174,16 +167,7 @@
         </section>
         
         <section class="slide" id="slide11" data-slide="11">
-            <div class="year">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni laudantium quo! Quam, iure, perferendis. Aut tempora dolore quas sint neque cumque labore accusantium. Omnis ab saepe blanditiis esse est.</div>
-            <audio id="2030s">
-                <source src="audio/2020.ogg" type="audio/ogg">
-                <source src="" type="audio/mpeg">
-             </audio>
-             <a class="button" data-slide="12"></a>
-        </section>
-        
-        <section class="slide" id="slide12" data-slide="12">
-            <div class="year">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni laudantium quo! Quam, iure, perferendis. Aut tempora dolore quas sint neque cumque labore accusantium. Omnis ab saepe blanditiis esse est.</div>
+            <div class="year">Конец просмотра. Меню скрываются.</div>
         </section>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
